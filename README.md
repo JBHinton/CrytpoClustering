@@ -28,12 +28,13 @@ Using knowledge of Python and unsupervised machine learning to predict if crypto
 * Load the `crypto_market_data.csv` into a DataFrame.
 * Obtain summary statistics and plot the data to assess the data.
 
-!(Images/price_change_percentage_coin.png)  
+![price_change_percentage_coin](images/price_change_percentage_coin.png)  
+
 
 * Use the StandardScaler() module from scikit-learn to normalize the data from the CSV file.
 * Create a DataFrame with the scaled data and set the 'coin_id' index from the original DataFrame as the index for the new DataFrame.
 
-!(images/final_crypto_df_fit_transformed.png) 
+![final_crypto_df_fit_transformed](images/final_crypto_df_fit_transformed.png) 
 
 
 
@@ -47,7 +48,7 @@ Using knowledge of Python and unsupervised machine learning to predict if crypto
         * Create a for loop to compute the inertia with each possible value of k.
         * Create a dictionary with the data to plot the elbow curve.
         * Plot a line chart with all the inertia values to visually identify the optimal value for k.
-!(images/elbow_curve_orig_data.png)  
+![elbow_curve_orig_data](images/elbow_curve_orig_data.png)  
 
 
 **What is the best value for k?** The best value for k would be k=4.
@@ -64,7 +65,7 @@ Using knowledge of Python and unsupervised machine learning to predict if crypto
         * Predict the clusters to group the cryptocurrencies using the original scaled DataFrame.
         * Create a copy of the original data and add a new column with the predicted clusters.
         * Create a scatter plot using hvPlot
-!(images/crypto_clusters_orig_data.png)          
+![crypto_clusters_orig_data](images/crypto_clusters_orig_data.png)         
         
         
 
@@ -75,7 +76,7 @@ Using knowledge of Python and unsupervised machine learning to predict if crypto
 * Retrieve the explained variance to determine how much information can be attributed to each principal component
 * Create a new DataFrame with the PCA data and set the 'coin_id' index from the original DataFrame as the index for the new DataFrame.
 
-!(images/clusters_PCA.png)  
+![clusters_PCA](images/clusters_PCA.png)
 
 
 **What is the total explained variance of the three principal components?** Total variance is the sum of variances of  all individual principal components.
